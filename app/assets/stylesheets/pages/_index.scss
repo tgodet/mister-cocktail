@@ -1,1 +1,10 @@
 @import "home";
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 400px;
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
+  background-image: url(http://odeon.ie/wp-content/uploads/2013/02/cocktail-bg1.jpg)
+}

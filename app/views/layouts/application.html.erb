@@ -11,10 +11,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<div class = "container">
-<%= yield %>
-</div>
+  <%= render "shared/navbar" %>
+  <% if controller_name == "pages" %>
+    <%= yield %>
+   <% else %>
+    <div class="container">
+      <%= yield %>
+    </div>
+  <% end %>
 
 </body>
 </html>
